@@ -7,7 +7,7 @@ self.addEventListener("push", (e) => {
         },
         icon: "images/logo.png",
         vibrate: [100, 50, 100],
-        action: [{
+        actions: [{
             action: "explore",title: "Gözat"
         },
         {
