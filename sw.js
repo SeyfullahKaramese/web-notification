@@ -4,7 +4,9 @@ self.addEventListener("push", (e) => {
         data: {
             dateOfArrival: Date.now(),
             primaryKey: "3"
-        }
+        },
+        icon:"images/logo.png",
+        vibrate:[100,50,100]
     }
     e.waitUntil(self.registration.showNotification("Yeni Makale Eklendi", config))
 })
