@@ -9,7 +9,7 @@ window.addEventListener("load", async () => {
 
         const serviceWorker = await navigator.serviceWorker.ready;
         const clientID = await serviceWorker.pushManager.subscribe({
-            userVisibility: true,
+            userVisibleOnly:true,
             applicationServerKey: "BNVtYp9HaIhLZIBqy-23rwA7sNS2zMkPJlasjVYZ6R9HmNwy0g9Jk9-T-7_wpodBVwft2Y6kWZwS717vES1Kv50"
         });
         console.log(clientID);
